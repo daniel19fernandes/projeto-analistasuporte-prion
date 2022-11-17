@@ -1,108 +1,57 @@
-:root{
-    ---color-white: #fff;
-
+.fundo {
+    background-image: linear-gradient(90deg, rgb(168, 218, 238), rgb(94, 186, 240));
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.subtitulo{
-    font-size: 14px;
-    font-weight: normal;
-    margin-bottom: 1rem;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(90deg, cyan, yellow);
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 12px;
-}
-
-.content{
-    background-color: rgba(0, 0, 0, 0.7 );
-    padding: 2rem;
-    border-radius: 30px;
-    min-width: 30%;
-    overflow: auto;
-}
-
-
-h1{
-
+.titulo h1 {
     text-align: center;
+    margin-top: 80px;
+    font-family: monospace;
+    font-size: 38px;
+}
+
+.titulo-secundario #sec {
+    font-size: 18px;
+    margin-top: -25px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
 }
 
 
-.content form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+h2 {
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 120px;
 }
 
-.span-required{
-    display: none;
-    font-size: 10px;
-    margin: 3px 0 0 1px;
-    color: rgb(139, 10, 10);
-    font-weight: bolder;
-
+.opcao-reserva, .opcao-hospede {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+    border: black 2px solid;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgb(39, 34, 34);
 }
 
-.inputs{
-    padding: 8px, 5px;
-    outline: none;
-    border-radius: 5px;
-    background-color: rgb(248, 248, 143);
-    border: 2px solid rgb(248, 248, 143);
-    width: 100%;
-    box-sizing: border-box;
-    transition: .3s;
-
+.opcao-hospede {
+    margin-left: 295px;
 }
 
-.inputs:focus{
-    border-color: gold;
+.opcao-reserva {
+    margin-left: 210px;
 }
 
-.box-select{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-
+nav a {
+    text-decoration: none;
+    color: white;
 }
 
-button[type="submit"]{
-    padding: 1rem;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    background-color: gold;
+.opcao-reserva:hover, .opcao-hospede:hover {
     cursor: pointer;
-
+    background: black;
+    transition: 0.5s all;
 }
-
-button[type="submit"]:hover{
-    background-color: rgb(219, 195, 57);
-}
-
-
-@media screen and (max-width: 576px) {
-    .box-select{
-        flex-direction: column;
-        gap: 5px;
-        
-    }
-}
-    
-
-
